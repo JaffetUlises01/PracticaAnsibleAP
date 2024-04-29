@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica Película Vecinos (Cortometraje)</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header img {
+            margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto según sea necesario */
+        }
+
+        .nombre-completo {
+            text-align: center;
+            margin-top: 20px; /* Ajusta el espacio entre el iframe y el nombre según sea necesario */
+            font-size: 1.2em; /* Ajusta el tamaño de fuente según sea necesario */
+            color: #ffffff; /* Ajusta el color del texto según sea necesario */
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Práctica Película Vecinos (Cortometraje)</h1>
-        <div class="video-container">
-            <video controls>
-                <source src="video.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
-            </video>
-        </div>
-    </div>
+    <header class="header">
+        <!-- Reemplaza la etiqueta <svg> con la etiqueta <img> y la URL de la imagen -->
+        <h1><img src="https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FzS8BSQdbOesql0EWbs17kPvLoAT.jpg&w=256&q=75" alt="" width="120" height="120"> Película: Kung Fu Panda 4</h1>
+    </header>
+    <main class="contenedor">
+        <iframe width="1200" height="540" src="https://player.cuevana.biz/player.php?h=rxPRsRSX4IlkyS1F21W5j9ni4whEhLxyga5RF9BK0wi6PsPjH3K0pGXB06Da9WJZ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        <div class="nombre-completo">Jaffet Ulises Ramírez Castro</div>
+    </main>
 </body>
 </html>
